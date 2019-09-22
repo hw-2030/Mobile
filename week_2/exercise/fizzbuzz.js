@@ -6,7 +6,20 @@ of both three and five print “FizzBuzz”."
 */
 
 function fizzbuzz() {
-  /*Your Code Here*/
+  for (let i = 1; i <= 100; i++) {
+    let fzb = "";
+    if (i % 3 === 0) {
+      fzb = fzb + "Fizz";
+    }
+    if (i % 5 === 0) {
+      fzb = fzb + "Buzz";
+    }
+    if (fzb.length === 0) {
+      fzb = " " + i;
+    }
+    console.log(fzb);
+  }
 }
 
 // ...and here, we actually CALL the function
+fizzbuzz();

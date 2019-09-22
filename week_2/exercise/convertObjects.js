@@ -6,9 +6,15 @@ NOTE: the returned object CANNOT modify the original object: its needs to be a D
 
 // skeleton code for your function
 function convertObjects(people) {
-  /*
-    Try to use a 'map' function instead of a for loop!
-    */
+  let canDrink = [];
+  people.map(person => {
+    if (person.age >= 21) {
+      person.isLegal = true
+    } else {
+      person.isLegal = false
+    }
+  })
+  console.log(people);
 }
 
 // now, we're going to test our function on some dummy data we're creating

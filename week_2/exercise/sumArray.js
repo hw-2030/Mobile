@@ -1,6 +1,9 @@
 function sumArray(arrayOfInts) {
-  // YOUR CODE HERE
-  // hint: use for loops to get through the array!
+  let sum = 0;
+  arrayOfInts.forEach(num => {
+    sum += num;
+  });
+  return sum;
 }
 
 testData = [4, 6, 1, -24];
